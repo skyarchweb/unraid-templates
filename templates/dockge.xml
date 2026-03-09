@@ -13,7 +13,7 @@
   <Overview>A fancy, easy-to-use and reactive self-hosted docker compose.yaml stack-oriented manager.</Overview>
   <Category/>
   <WebUI>http://[IP]:[PORT:5001]/</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/skyarchweb/unraid-templates/refs/heads/main/templates/dockge.xml?token=GHSAT0AAAAAADWLYOEMIIOXZMISOUWLG6TC2NOEMBA</TemplateURL>
   <Icon>https://raw.githubusercontent.com/alex3305/unraid-docker-templates/master/images/dockge.png</Icon>
   <ExtraParams/>
   <PostArgs/>
