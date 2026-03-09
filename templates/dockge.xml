@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>dockge</Name>
+  <Repository>ghcr.io/skyarchweb/dockge:1</Repository>
+  <Registry>https://ghcr.io</Registry>
+  <Network>nemo_apps</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <ReadMe/>
+  <Overview>A fancy, easy-to-use and reactive self-hosted docker compose.yaml stack-oriented manager.</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:5001]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/alex3305/unraid-docker-templates/master/images/dockge.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="Web UI" Target="5001" Default="5001" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5001</Config>
+  <Config Name="Docker Socket" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/var/run/docker.sock</Config>
+  <Config Name="App data" Target="/app/data" Default="/mnt/ssd_app/appdata/dockge/data" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/ssd_app/appdata/dockge/data</Config>
+  <Config Name="Stacks Directory Path" Target="/mnt/ssd_app/appdata/dockge/stacks" Default="/mnt/ssd_app/appdata/dockge/stacks" Mode="rw" Description="" Type="Path" Display="always" Required="true" Mask="false">/mnt/ssd_app/appdata/dockge/stacks</Config>
+  <Config Name="Stacks Directory Variable" Target="DOCKGE_STACKS_DIR" Default="/mnt/ssd_app/appdata/dockge/stacks" Mode="rw" Description="" Type="Variable" Display="always" Required="true" Mask="false">/mnt/ssd_app/appdata/dockge/stacks</Config>
+  <Config Name="TailScale Fallback State Directory" Target="CA_TS_FALLBACK_DIR" Default="/app/data" Mode="" Description="Fallback container directory for tailscale state information - Added By Community Applications" Type="Variable" Display="advance" Required="false" Mask="false">/app/data</Config>
+  <TailscaleStateDir/>
+</Container>
